@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/home_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总计：1亿元"/>
+
+    <LinearLayout
+        android:id="@+id/entry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- 本周条目 -->
+        <TextView
+            android:id="@+id/text_this_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="本周"
+            android:textSize="18sp" />
+
+        <!-- 本月条目 -->
+        <TextView
+            android:id="@+id/text_this_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="本月"
+            android:textSize="18sp" />
+        <!--        android:textColor="@color/your_text_color"/>-->
+
+        <!-- 本年条目 -->
+        <TextView
+            android:id="@+id/text_this_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="本年"
+            android:textSize="18sp" />
+        <!--        android:textColor="@color/your_text_color"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
